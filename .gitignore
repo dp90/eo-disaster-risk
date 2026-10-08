@@ -1,0 +1,22 @@
+# Datasets
+data/*
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Model outputs
+*.pt
+*.pth
+*.ckpt
+runs/
+outputs/
+
+# Large rasters anywhere
+*.tif
+*.tiff
+
+.DS_Store

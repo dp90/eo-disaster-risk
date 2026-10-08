@@ -1,0 +1,20 @@
+[project]
+name = "eo-disaster-risk"
+version = "0.1.0"
+description = "Machine learning on Earth-observation data for natural hazards"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "seaborn",
+    "jupyterlab",
+    "torch",
+    "torchvision",
+    "rasterio",
+    "shapely",
+]
+
+[tool.uv]
+package = false
