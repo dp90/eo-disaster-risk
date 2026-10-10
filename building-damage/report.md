@@ -10,7 +10,7 @@ _Label_: the damage class, with polygons given. Assuming you already have the po
 
 Bigger picture: how many people were affected? We could add damaged buildings weighted by footprint up by area. But
 1. Footprint area tells us how much building was damaged, but not how many people were affected. xBD has no population data. We'd have to bring in a layer such as WorldPop or GHSL. This could be interesting as a next step. To start, I'll use damaged footprint area per grid cell.
-- What to compare against? We can't recreate how practitioners do it today, which is mostly analysts interpreting the imagery by hand. We can compare against the labels by ranking the grid cells by damage computed from the true labels and seeing how closely the model's ranking matches. For example, of the 10 worst-hit cells, how many does the model put in its own top 10? We'll also add a simple baseline, such as ranking cells by how much the pixels changed between pre and post, so that we can tell whether the model adds anything.
+2. What to compare against? We can't recreate how practitioners do it today, which is mostly analysts interpreting the imagery by hand. We can compare against the labels by ranking the grid cells by damage computed from the true labels and seeing how closely the model's ranking matches. For example, of the 10 worst-hit cells, how many does the model put in its own top 10? We'll also add a simple baseline, such as ranking cells by how much the pixels changed between pre and post, so that we can tell whether the model adds anything.
 
 A draft problem statement:
 
